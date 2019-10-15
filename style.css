@@ -1,14 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: yellow;
+    background-color: gray;
 };
 
 .jumbotron {
     text-align: center;
 }
-    /* background-image: url(/app/Images/background.jpg);
-    background-size: cover;
-    height: 100%;} */
 
-.wrapper {
-    align-items: center;
+footer {
+    border-top: 1px solid #ccc;
+    margin-top: 300px;
+    text-align: center;
 }
+
+
+
+
+/* background-image: url(/app/Images/686181-bg.jpg);
+background-size: cover; */
+
+
+/* background-image: url(/app/Images/background.jpg);
+background-size: cover;
+height: 100%;} */
