@@ -1,0 +1,14 @@
+body {
+    background-color: yellow;
+};
+
+.jumbotron {
+    text-align: center;
+}
+    /* background-image: url(/app/Images/background.jpg);
+    background-size: cover;
+    height: 100%;} */
+
+.wrapper {
+    align-items: center;
+}
