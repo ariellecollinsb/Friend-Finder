@@ -21,7 +21,7 @@
 
   <div class="container">
 
-    <h2>WHICH POKEMON TRAINER ARE YOU?</h2>
+    <h1>WHICH POKEMON TRAINER ARE YOU?</h1>
     <hr>
 
     <h3><strong>About You</strong></h3>
@@ -150,7 +150,7 @@
 
     <h3><strong>Question 11</strong></h3>
     <h4>Who doesn't love a good thunderstorm!.</h4>
-    <select class="chosen-select" id="q10">
+    <select class="chosen-select" id="q11">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
@@ -161,7 +161,7 @@
 
     <h3><strong>Question 12</strong></h3>
     <h4>Why would anyone dig for shiny rocks when there are shells and pearls.</h4>
-    <select class="chosen-select" id="q10">
+    <select class="chosen-select" id="q12">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
@@ -179,7 +179,7 @@
     <hr>
     <footer class="footer">
       <div class="container">
-        <p><a href="#">GitHub</a> | <a href="#">LinkedIn</a></p>
+        <p><a href="#">API Trainer List</a> | <a href="#">GitHub Repo</a></p>
       </div>
     </footer>
 
@@ -260,10 +260,12 @@
             $("#q8").val(),
             $("#q9").val(),
             $("#q10").val()
+            $("#q11").val(),
+            $("#q12").val()
           ]
         };
     
-        $.post("/api/friends", userData, function(data) {
+        $.post("/app/data/friends", userData, function(data) {
           
           $("#match-name").text(data.name);
           $("#match-img").attr("src", data.photo);
