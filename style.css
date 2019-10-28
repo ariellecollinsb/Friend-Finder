@@ -4,7 +4,13 @@
 
 body {
     background-color: gray;
-};
+}
+
+.img-wrapper {
+    background-image: url(/app/Images/background.jpg);
+    background-size: cover;
+    height: 100%;
+}
 
 .jumbotron {
     text-align: center;
@@ -15,8 +21,6 @@ footer {
     margin-top: 300px;
     text-align: center;
 }
-
-
 
 
 /* background-image: url(/app/Images/686181-bg.jpg);
