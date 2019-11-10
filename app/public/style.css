@@ -4,7 +4,9 @@
 
 body {
     background-image: url("../Images/686181-bg.jpg");
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 }
 
