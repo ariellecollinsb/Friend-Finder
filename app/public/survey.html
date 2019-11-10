@@ -13,16 +13,15 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="../../style.css" />
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-    <div class="container">
+    <div class="survey-container">
 
-        <h1>WHICH POKEMON TRAINER ARE YOU?</h1>
-        <hr>
+        <h1 class="header">WHICH POKEMON TRAINER ARE YOU?</h1>
 
         <h3><strong>About You</strong></h3>
         <h4>Name (Required)</h4>
@@ -32,158 +31,159 @@
         <input type="text" id="photo" class="form-control" required>
 
         <hr>
+        <div class="questionnaire">
+            <h3><strong>Question 1</strong></h3>
+            <h4>You have a very nurturing personality.</h4>
+            <select class="chosen-select" id="q1">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
 
-        <h3><strong>Question 1</strong></h3>
-        <h4>You have a very nurturing personality.</h4>
-        <select class="chosen-select" id="q1">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
-
-        <h3><strong>Question 2</strong></h3>
-        <h4>Why stay indoors when you could be out fishing, or swimming, or playing in the rain.</h4>
-        <select class="chosen-select" id="q2">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
-
-
-        <h3><strong>Question 3</strong></h3>
-        <h4>You are well travelled and will jump at the next opportunity, even if you have to slum-it.</h4>
-        <select class="chosen-select" id="q3">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
+            <h3><strong>Question 2</strong></h3>
+            <h4>Why stay indoors when you could be out fishing, or swimming, or playing in the rain.</h4>
+            <select class="chosen-select" id="q2">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
 
 
-        <h3><strong>Question 4</strong></h3>
-        <h4>You're not a fan of getting wet.</h4>
-        <select class="chosen-select" id="q4">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
+            <h3><strong>Question 3</strong></h3>
+            <h4>You are well travelled and will jump at the next opportunity, even if you have to slum-it.</h4>
+            <select class="chosen-select" id="q3">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
 
 
-        <h3><strong>Question 5</strong></h3>
-        <h4>Protecting animals, and the environment is very important.</h4>
-        <select class="chosen-select" id="q5">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
+            <h3><strong>Question 4</strong></h3>
+            <h4>You're not a fan of getting wet.</h4>
+            <select class="chosen-select" id="q4">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
 
 
-        <h3><strong>Question 6</strong></h3>
-        <h4>Everyone thinks you're a great cook, even your pets.</h4>
-        <select class="chosen-select" id="q6">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
+            <h3><strong>Question 5</strong></h3>
+            <h4>Protecting animals, and the environment is very important.</h4>
+            <select class="chosen-select" id="q5">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
 
 
-        <h3><strong>Question 7</strong></h3>
-        <h4>Being level-headed is important, and you're usually the voice of reason in any conflict.</h4>
-        <select class="chosen-select" id="q7">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
+            <h3><strong>Question 6</strong></h3>
+            <h4>Everyone thinks you're a great cook, even your pets.</h4>
+            <select class="chosen-select" id="q6">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
 
-        <h3><strong>Question 8</strong></h3>
-        <h4>You feel the need to prove yourself to your family.</h4>
-        <select class="chosen-select" id="q8">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
 
-        <h3><strong>Question 9</strong></h3>
-        <h4>All your friends try to stay on your good side.</h4>
-        <select class="chosen-select" id="q9">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
+            <h3><strong>Question 7</strong></h3>
+            <h4>Being level-headed is important, and you're usually the voice of reason in any conflict.</h4>
+            <select class="chosen-select" id="q7">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
 
-        <h3><strong>Question 10</strong></h3>
-        <h4>No matter how hard the going gets, you keep at it.</h4>
-        <select class="chosen-select" id="q10">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
+            <h3><strong>Question 8</strong></h3>
+            <h4>You feel the need to prove yourself to your family.</h4>
+            <select class="chosen-select" id="q8">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
 
-        <h3><strong>Question 11</strong></h3>
-        <h4>Who doesn't love a good thunderstorm!.</h4>
-        <select class="chosen-select" id="q11">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
+            <h3><strong>Question 9</strong></h3>
+            <h4>All your friends try to stay on your good side.</h4>
+            <select class="chosen-select" id="q9">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
 
-        <h3><strong>Question 12</strong></h3>
-        <h4>Why would anyone dig for shiny rocks when there are shells and pearls.</h4>
-        <select class="chosen-select" id="q12">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
+            <h3><strong>Question 10</strong></h3>
+            <h4>No matter how hard the going gets, you keep at it.</h4>
+            <select class="chosen-select" id="q10">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
 
-        <br>
-        <br>
+            <h3><strong>Question 11</strong></h3>
+            <h4>Who doesn't love a good thunderstorm!.</h4>
+            <select class="chosen-select" id="q11">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
 
-        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
-     Submit</button>
+            <h3><strong>Question 12</strong></h3>
+            <h4>Why would anyone dig for shiny rocks when there are shells and pearls.</h4>
+            <select class="chosen-select" id="q12">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
 
-        <hr>
-        <footer class="footer">
-            <div class="container">
-                <p><a href="#">API Trainer List</a> | <a href="#">GitHub Repo</a></p>
-            </div>
-        </footer>
+            <br>
+            <br>
+
+            <button type="submit" class="btn btn-primary btn-lg" id="submit"><i class="fa fa-check-circle"
+                    aria-hidden="true"></i>
+                Submit</button>
+        </div>
 
     </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p><a href="#">API Trainer List</a> | <a href="#">GitHub Repo</a></p>
+        </div>
+    </footer>
 
     <div id="results-modal" class="modal fade" role="dialog">
         <div class="modal-dialog">
@@ -195,7 +195,7 @@
                 </div>
                 <div class="modal-body">
                     <h2 id="match-name"></h2>
-                    <img id="match-img" src="#" alt="">
+                    <img id="match-img" src="#" alt="best match img">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -225,17 +225,17 @@
             $(selector).chosen(config[selector]);
         }
 
-        $("#submit").on("click", function(event) {
+        $("#submit").on("click", function (event) {
             event.preventDefault();
 
             function validateForm() {
                 var isValid = true;
-                $(".form-control").each(function() {
+                $(".form-control").each(function () {
                     if ($(this).val() === "") {
                         isValid = false;
                     }
                 });
-                $(".chosen-select").each(function() {
+                $(".chosen-select").each(function () {
                     if ($(this).val() === "") {
                         isValid = false;
                     }
@@ -264,7 +264,7 @@
                     ]
                 };
 
-                $.post("/app/data/friends", userData, function(data) {
+                $.post("/api/characters", userData, function (data) {
 
                     $("#match-name").text(data.name);
                     $("#match-img").attr("src", data.photo);
